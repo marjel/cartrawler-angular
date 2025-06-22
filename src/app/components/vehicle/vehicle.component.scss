@@ -1,0 +1,35 @@
+.vehicle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #fff;
+}
+
+.vehicle-image {
+  height: auto;
+  width: auto;
+  max-height: 100px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.vehicle-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.vehicle-price {
+  color: #1d6ae5;
+  font-weight: 600;
+}
+
+.vehicle-vendor {
+  font-size: 0.9rem;
+  color: #666;
+}

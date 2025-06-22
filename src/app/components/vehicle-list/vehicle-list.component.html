@@ -1,0 +1,22 @@
+<app-legend [legend]="legend$ | async"></app-legend>
+<div class="sort-bar">
+    <label for="sortSelect">Sort: </label>
+    <select id="sortSelect" (change)="onSortChange($event)">
+        <option value="price-asc">Price asc</option>
+        <option value="price-desc">Price desc</option>
+        <option value="name-asc">Name A-Z</option>
+        <option value="name-desc">Name Z-A</option>
+    </select>
+</div>
+
+<section class="vehicle-list">
+    @if (loading$ | async) {
+    <div class="loading">Loading...</div>
+    }
+
+    @if (vehicles$ | async) {
+        @for (vehicle of sortedVehicles; track trackByFn($index, vehicle)) {
+            <app-vehicle [vehicle]="vehicle" />
+        }
+    }
+</section>

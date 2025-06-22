@@ -1,0 +1,10 @@
+<section *ngIf="vehicle$ | async as vehicle">
+  <h2>{{ vehicle.makeModel }}</h2>
+  <p>Price: {{ vehicle.rateTotalAmount }} {{ vehicle.currencyCode }}</p>
+  <p>Vendor: {{ vehicle.vendorName }}</p>
+  <p>Fuel: {{ vehicle.fuelType }}</p>
+  <p>Transmission: {{ vehicle.transmissionType }}</p>
+  <p>Passenger Quantity: {{ vehicle.passengerQuantity }}</p>
+  <p>Status: {{ vehicle.status }}</p>
+</section>
+

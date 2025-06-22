@@ -1,0 +1,13 @@
+<div class="legend-wrapper">
+  <h3 class="legend-title">Legend</h3>
+
+  <div class="legend-row">
+    <strong>Pickup:</strong>
+    {{ legend?.pickUpLocation }} – {{ legend?.pickUpDate | date: 'M/d/yy, h:mm a' }}
+  </div>
+
+  <div class="legend-row">
+    <strong>Return:</strong>
+    {{ legend?.returnLocation }} – {{ legend?.returnDate | date: 'M/d/yy, h:mm a' }}
+  </div>
+</div>

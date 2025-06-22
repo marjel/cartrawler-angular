@@ -1,1 +1,102 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --color-primary: #E6356F;
+  --color-border: #E6356F;
+  --color-text: #333333;
+  --color-grey-bg: #EFEFEF;
+  --color-white: #FFFFFF;
+  --color-container-border: #C7C7CD;
+}
+
+:root {
+  --font-family-base: 'Open Sans', sans-serif;
+  --font-size-base: 16px;
+  --font-size-small: 14px;
+  --font-size-large: 20px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+:root {
+  --font-title-xl-size: 3rem;         // 48px
+  --font-title-xl-line: 4.063rem;     // 65px
+
+  --font-title-l-size: 2.625rem;      // 42px
+  --font-title-l-line: 3.563rem;      // 57px
+
+  --font-title-m-size: 2.25rem;       // 36px
+  --font-title-m-line: 3.063rem;      // 49px
+
+  --font-title-s-size: 2rem;          // 32px
+  --font-title-s-line: 2.688rem;      // 43px
+
+  --font-subtitle-xl-size: 1.75rem;   // 28px
+  --font-subtitle-xl-line: 2.375rem;  // 38px
+
+  --font-subtitle-l-size: 1.5rem;     // 24px
+  --font-subtitle-l-line: 2.063rem;   // 33px
+
+  --font-subtitle-m-size: 1.25rem;    // 20px
+  --font-subtitle-m-line: 2.688rem;   // 27px
+
+  --font-subtitle-s-size: 1.125rem;   // 18px
+  --font-subtitle-s-line: 1.5rem;     // 24px
+
+  --font-body-l-size: 1rem;           // 16px
+  --font-body-l-line: 1.375rem;       // 22px
+
+  --font-body-m-size: 0.875rem;       // 14px
+  --font-body-m-line: 1.188rem;       // 19px
+
+  --font-body-s-size: 0.75rem;        // 12px
+  --font-body-s-line: 1.063rem;       // 17px
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-grey-bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.button-primary {
+  font-size: var(--font-body-m-size);
+  line-height: var(--font-body-m-line);
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-base);
+  height: 40px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: none;
+  cursor: pointer;
+}
+
+
+

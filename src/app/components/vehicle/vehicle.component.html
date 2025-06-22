@@ -1,0 +1,19 @@
+<div class="vehicle">
+  <img [src]="vehicle.pictureUrl" [alt]="vehicle.makeModel" class="vehicle-image" />
+
+  <div class="vehicle-details">
+    <h3 class="vehicle-title">{{ vehicle.makeModel }}</h3>
+    <p class="vehicle-price">
+      {{ vehicle.rateTotalAmount }} {{ vehicle.currencyCode }}
+    </p>
+    <p class="vehicle-vendor">Vendor: {{ vehicle.vendorName }}</p>
+    <p>Status: {{ vehicle.status }}</p>
+    <p>Passengers: {{ vehicle.passengerQuantity }}</p>
+    <p>Fuel Type: {{ vehicle.fuelType }}</p>
+    <p>Transmission: {{ vehicle.transmissionType }}</p>
+    <p>Air Conditioning: {{ vehicle.airConditionInd ? 'Yes' : 'No' }}</p>
+    <p>Baggage: {{ vehicle.baggageQuantity }}</p>
+    <p>Doors: {{ vehicle.doorCount }}</p>
+    <button class="button-primary" (click)="goToDetails()">More details</button>
+  </div>
+</div>
