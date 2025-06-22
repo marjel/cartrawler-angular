@@ -1,7 +1,7 @@
 <app-legend [legend]="legend$ | async"></app-legend>
 <div class="sort-bar">
-    <label for="sortSelect">Sort: </label>
-    <select id="sortSelect" (change)="onSortChange($event)">
+    <label for="sortSelect">Sort vehicles: </label>
+    <select id="sortSelect" (change)="onSortChange($event)" class="select-primary">
         <option value="price-asc">Price asc</option>
         <option value="price-desc">Price desc</option>
         <option value="name-asc">Name A-Z</option>
