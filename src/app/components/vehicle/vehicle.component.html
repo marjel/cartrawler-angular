@@ -6,7 +6,9 @@
     <p class="vehicle-price">
       {{ vehicle.rateTotalAmount }} {{ vehicle.currencyCode }}
     </p>
-    <p class="vehicle-vendor">Vendor: {{ vehicle.vendorName }}</p>
+    <p class="vehicle-vendor">
+<app-svg-icon [icon]="vehicle.vendorName.toLowerCase()" [alt]="vehicle.vendorName" class="ml-2"></app-svg-icon>
+</p>
     <p>Status: {{ vehicle.status }}</p>
     <p>Passengers: {{ vehicle.passengerQuantity }}</p>
     <p>Fuel Type: {{ vehicle.fuelType }}</p>

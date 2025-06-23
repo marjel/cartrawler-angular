@@ -2,10 +2,11 @@ import { Component, Input, inject } from '@angular/core';
 import { Vehicle } from '../../models/vehicle.model';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { SvgIconComponent } from '../svg-icon/svg-icon.component';
 
 @Component({
   selector: 'app-vehicle',
-  imports: [CommonModule],
+  imports: [CommonModule, SvgIconComponent],
   templateUrl: './vehicle.component.html',
   styleUrl: './vehicle.component.scss'
 })
